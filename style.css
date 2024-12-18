@@ -1,0 +1,36 @@
+:root {
+    --dominant-color: #FFFFFF;
+    --bg-color: #130404;
+    --second-bg-color: #2D0D0D;
+    --accent-color: #FFF72E;
+    --btn-color: #4CB63A;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dominant-color);
+    background-color: var(--bg-color);
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
