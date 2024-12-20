@@ -44,6 +44,7 @@ body{
 }
 
 .button{
+    display: inline-block;
     font-weight: 600;
     padding: 10.5px 0;
     background: var(--btn-color);
@@ -114,16 +115,9 @@ body{
 /* SIDEBAR */
 .sidebar{
     align-self: flex-start;
-    padding: 17px;
+    padding: 17px 0;
     width: 240px;
     margin: 20px 20px 0 0;
-}
-
-.sidebar__services-list{
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    margin-bottom: 20px;
 }
 
 .sidebar__services-link{
@@ -132,7 +126,7 @@ body{
 
 .sidebar__title{
     color: var(--dominant-color);
-    margin: 20px 0 10px 0;
+    margin: 20px 0 10px 0px;
     max-width: 175px;
 }
 
@@ -142,7 +136,77 @@ body{
 
 .sidebar__list{
     flex-direction: column;
-    gap: 5px;
     align-items: flex-start;
     font-size: 14px;
+}
+
+.sidebar__services-list{
+    margin-bottom: 20px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.sidebar__item{
+    padding: 4px 17px;
+    width: calc(100% - 34px);
+    transition: background-image 0.3s ease;
+}
+
+.sidebar__item:hover{
+    background-image: linear-gradient(to right, var(--bg-color), var(--second-bg-color));
+}
+
+.sidebar__element-center{
+    margin: 0 17px;
+}
+
+.sidebar-right{
+    max-width: 1280px;
+}
+
+/* HERO */
+.hero{
+    background-image: linear-gradient(to right, rgba(19, 4, 4, 0.5), rgba(45, 13, 13, 0)), linear-gradient(to right, rgba(19, 4, 4, 1), rgba(45, 13, 13, 0)), url(./images/img_background_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    padding-left: 106px;
+}
+
+.hero__gradient{
+    background-image: radial-gradient(ellipse, rgba(255, 247, 46, 1) 10%, rgba(19, 4, 4, 1) 75%);
+    height: 3px;
+}
+
+.hero__rating-list{
+    gap: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.hero__text-block{
+    margin-right: 65px;
+}
+
+.hero__title{
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.hero__reg-btn{
+    width: 170px;
+    margin-top: 25px;
+}
+
+.hero__desc{
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 32px;
+    font-size: 15px;
+    line-height: 22.5px;
+    align-items: flex-start;
 }
