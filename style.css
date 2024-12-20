@@ -63,3 +63,16 @@ body{
     font-size: 32px;
     line-height: 38.4px;
 }
+
+.section{
+    border-radius: 12px;
+    background-color: var(--second-bg-color);
+}
+
+.section-gradient{
+    background-image: linear-gradient(to right, var(--second-bg-color), var(--bg-color));
+}
+
+.item-gradient{
+    background-image: linear-gradient(to right, var(--bg-color), var(--second-bg-color));
+}
