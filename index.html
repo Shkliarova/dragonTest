@@ -7,31 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="list">
+    <header class="list header">
         <a class="link header__logo" href="./index.html">
             <img src="./images/logo.png" alt="logo">
         </a>
         <nav>
-            <ul class="list">
-                <li>Games</li>
-                <li>Promotions</li>
-                <li>Tournaments</li>
-                <li>Live dealers</li>
+            <ul class="list header__menu-list">
+                <li><a class="link" href="">Games</a></li>
+                <li>
+                    <svg width="30" height="12">
+                        <use href="./images/icons.svg#listElement"></use>
+                    </svg>
+                </li>
+                <li><a class="link" href="">Promotions</a></li>
+                <li>
+                    <svg width="30" height="12">
+                        <use href="./images/icons.svg#listElement"></use>
+                    </svg>
+                </li>
+                <li><a class="link" href="">Tournaments</a></li>
+                <li>
+                    <svg width="30" height="12">
+                        <use href="./images/icons.svg#listElement"></use>
+                    </svg>
+                </li>
+                <li><a class="link" href="">Live dealers</a></li>
             </ul>
         </nav>
-        <div class="list">
-            <a class="link button button-login" href="">Log In</a>
-            <a class="link button" href="">Register now</a>
-            <svg width="24" height="24">
+        <div class="list header__btn-list">
+            <a class="link button button-login header__btn-login" href="">Log In</a>
+            <a class="link button header__btn-register" href="">Register now</a>
+            <svg class="header__icon" width="24" height="24">
                 <use href="./images/icons.svg#engFlag"></use>
             </svg>
         </div>
     </header>
     <main class="list">
-        <div class="section">
-            <ul class="list">
+        <div class="section sidebar">
+            <ul class="list sidebar__services-list">
                 <li>
-                    <a class="link" href="">
+                    <a class="link list sidebar__services-link" href="">
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#dice"></use>
                         </svg>
@@ -39,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link" href="">
+                    <a class="link list sidebar__services-link" href="">
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#cash-withdrawal"></use>
                         </svg>
@@ -47,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link" href="">
+                    <a class="link list sidebar__services-link" href="">
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#worldwide"></use>
                         </svg>
@@ -55,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link" href="">
+                    <a class="link list sidebar__services-link" href="">
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#calendar"></use>
                         </svg>
@@ -63,7 +78,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link" href="">
+                    <a class="link list sidebar__services-link" href="">
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#donation"></use>
                         </svg>
@@ -71,17 +86,18 @@
                     </a>
                 </li>
             </ul>
+            <img src="./images/Line.png" width="207" alt="line">
             <div>
                 <div class="list">
-                    <h3 class="title">Lorem ipsum belet dolor sit ameiyt</h3>
-                    <svg width="16" height="9">
+                    <h3 class="title sidebar__title">Lorem ipsum belet dolor sit ameiyt</h3>
+                    <svg class="sidebar__icon" width="16" height="9">
                         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9" id="Arrow2">
                             <path d="M15.7589 8.7541C15.4667 9.05216 15.0095 9.07926 14.6873 8.83539L14.595 8.7541L8 2.02658L1.40503 8.7541C1.11283 9.05216 0.655583 9.07926 0.333375 8.83539L0.241064 8.7541C-0.0511349 8.45604 -0.0776984 7.98963 0.161374 7.66096L0.241064 7.56679L7.41802 0.245899C7.71022 -0.0521604 8.16746 -0.0792568 8.48967 0.16461L8.58198 0.245899L15.7589 7.56679C16.0804 7.89466 16.0804 8.42624 15.7589 8.7541Z" fill="white"></path>
                         </symbol>
                         <use href="#Arrow2"></use>
                     </svg>
                 </div>
-                <ul class="list">
+                <ul class="list sidebar__list">
                     <li>
                         <a class="link" href="">Review of 22Bet</a>
                     </li>
