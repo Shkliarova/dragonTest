@@ -374,3 +374,50 @@ body{
 .faq__question-desc{
     padding: 6.5px 20px;
 }
+
+/* FOOTER */
+.footer{
+    padding: 0 38px;
+    color: rgba(216, 211, 211, 1);
+}
+
+.footer__lists-inner{
+    flex-direction: column;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.footer__list{
+    gap: 16px;
+    line-height: 22.4px;
+    text-transform: uppercase;
+}
+
+.footer__list-element{
+    color: var(--accent-color);
+}
+
+.footer__partner-list{
+    gap: 12px;
+}
+
+.footer__partner-item{
+    padding: 0 16px;
+    height: 66px;
+    background-color: var(--dominant-color);
+}
+
+.footer__extra-info{
+    padding: 34px 10px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer__icon{
+    background-color: rgba(254, 81, 81, 1);
+    color: var(--dominant-color);
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 10px 8px;
+    margin-left: auto;
+}
