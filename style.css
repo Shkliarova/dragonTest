@@ -78,7 +78,6 @@ body{
 .title-big{
     font-size: 32px;
     line-height: 38.4px;
-    text-align: center;
     margin-bottom: 22px;
 }
 
@@ -99,6 +98,12 @@ body{
 
 .item-gradient{
     background-image: linear-gradient(to right, var(--bg-color), var(--second-bg-color));
+}
+
+.title-inner{
+    align-items: baseline;
+    justify-content: center;
+    gap: 16px;
 }
 
 /* HEADER */
