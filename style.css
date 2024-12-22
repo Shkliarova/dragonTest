@@ -155,8 +155,27 @@ body{
     max-width: 175px;
 }
 
+.sidebar__list-drop-down {
+    max-height: none;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar__list-drop-down.collapsed {
+    max-height: 0;
+    opacity: 0; 
+    padding: 0;
+}
+
 .sidebar__icon{
     margin-left: auto;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.sidebar__icon.activated{
+    transform: rotate(180deg);
 }
 
 .sidebar__list{
@@ -239,7 +258,10 @@ body{
 /* ADVANTAGES */
 
 .advantages{
-    background-image: url();
+    background-image: linear-gradient(to right, rgba(19, 4, 4, 0.5), rgba(45, 13, 13, 0)), linear-gradient(to right, rgba(19, 4, 4, 1), rgba(45, 13, 13, 0)), url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 630px;
     padding: 136px 117px 155px 117px;
     text-align: center;
@@ -374,9 +396,25 @@ body{
 .faq__icon{
     stroke: var(--accent-color);
     margin-left: auto;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.faq__question-item.active .faq__icon {
+    transform: rotate(0deg);
 }
 
 .faq__question-desc{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+}
+
+.faq__question-item.active .faq__question-desc {
+    max-height: 100px;
+    opacity: 1;
     padding: 6.5px 20px;
 }
 
@@ -412,6 +450,11 @@ body{
     background-color: var(--dominant-color);
 }
 
+.footer__partner-link{
+    display: flex;
+    align-items: center;
+}
+
 .footer__extra-info{
     padding: 34px 10px;
     font-size: 14px;
@@ -427,6 +470,8 @@ body{
     margin-left: auto;
 }
 
+
+/* SCROLL-UP */
 .scroll-up-btn{
     opacity: 0;
     position: fixed;
