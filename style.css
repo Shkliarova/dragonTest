@@ -65,7 +65,7 @@ body{
     width: 170px;
 }
 
-.button-login{
+.button-outline{
     background-color: transparent;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
@@ -114,22 +114,33 @@ body{
     padding: 15px 0;
     flex-direction: column;
     gap: 12px;
+    display: flex;
+    align-items: center;
 }
 
-.header__menu-list{
+.header__menu > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
     gap: 4px;
     flex-direction: column;
 }
 
-.header__btn-list{
+.header__menu li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.header__auth-list{
     gap: 4px;
 }
 
-.header__btn-login{
+.header__button-login{
     width: 115px;
 }
 
-.header__btn-register{
+.header__button-register{
     width: 145px;
 }
 
@@ -501,6 +512,28 @@ body{
     opacity: 0;
 }
 
+@media screen and (min-width: 650px){
+    .header{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .header__logo{
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .header__menu > ul{
+        flex-direction: row;
+    }
+
+    .header__auth-list{
+        gap: 20px;
+        margin-left: auto;
+    }
+}
+
 @media screen and (min-width: 1600px){
     .title-big{
         font-size: 32px;
@@ -528,24 +561,13 @@ body{
         flex-direction: row;
     }
 
-    .header{
-        flex-direction: row;
-        gap: 0;
-    }
-
     .header__logo{
         margin-left: 59px;
         margin-right: 78.31px;
     }
     
-    .header__menu-list{
-        flex-direction: row;
+    .header__menu > ul{
         gap: 10px;
-    }
-    
-    .header__btn-list{
-        gap: 20px;
-        margin-left: auto;
     }
 
     /* SIDEBAR */
