@@ -61,14 +61,14 @@ body{
     text-align: center;
 }
 
-.button-register{
-    width: 170px;
-}
-
-.button-outline{
+.button.outline{
     background-color: transparent;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+.button-register{
+    width: 170px;
 }
 
 .title{
