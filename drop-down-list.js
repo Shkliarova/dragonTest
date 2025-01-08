@@ -13,7 +13,7 @@ const faqItems = document.querySelectorAll('.faq__question-item');
     });
 
 
-const sidebarToggle = document.querySelector('.sidebar__icon');
+const sidebarToggle = document.querySelector('.sidebar__arrow-icon');
 const dropdownList = document.querySelector('.sidebar__list-drop-down');
 
 sidebarToggle.addEventListener('click', () => {

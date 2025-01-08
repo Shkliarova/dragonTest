@@ -1,4 +1,4 @@
-const scrollUpButton = document.querySelector('.scroll-up-btn');
+const scrollUpButton = document.querySelector('.scroll-up-button');
 
 window.addEventListener("scroll", () => {
     
