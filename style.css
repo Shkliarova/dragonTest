@@ -128,9 +128,11 @@ body{
     align-items: center;
 }
 
-.main__content-wrapper{
+.main{
     justify-content: center;
     flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 .button{
@@ -181,6 +183,7 @@ body{
 }
 
 .title-inner{
+    display: flex;
     align-items: baseline;
     justify-content: center;
     gap: 16px;
@@ -219,6 +222,8 @@ body{
 }
 
 .header__button-auth{
+    display: flex;
+    align-items: center;
     gap: 4px;
 }
 
@@ -230,11 +235,18 @@ body{
     width: 145px;
 }
 
-.header__lang-icon{
+.header__lang{
     border-radius: 50%;
 }
 
 /* SIDEBAR */
+.sidebar{
+    border-radius: 12px;
+    background-color: var(--second-bg-color);
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
 .sidebar-left{
     align-self: center;
     padding: 17px 0;
@@ -243,7 +255,14 @@ body{
 }
 
 .sidebar__services-link{
+    display: flex;
+    align-items: center;
     gap: 8px;
+}
+
+.sidebar__title-inner{
+    display: flex;
+    align-items: center;
 }
 
 .sidebar__title{
@@ -265,17 +284,19 @@ body{
     padding: 0;
 }
 
-.sidebar__arrow-icon{
+.sidebar__arrow{
     margin-left: auto;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
 }
 
-.sidebar__arrow-icon.activated{
+.sidebar__arrow.activated{
     transform: rotate(180deg);
 }
 
 .sidebar__list{
+    list-style: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 14px;
@@ -301,12 +322,14 @@ body{
     margin: 0 17px;
 }
 
-.sidebar-right{
+.main-content{
     max-width: 290px;
 }
 
 /* HERO */
 .hero{
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(to right, rgba(19, 4, 4, 0.5), rgba(45, 13, 13, 0)), linear-gradient(to right, rgba(19, 4, 4, 1), rgba(45, 13, 13, 0)), url();
     background-repeat: no-repeat;
     background-position: center;
@@ -316,6 +339,8 @@ body{
 }
 
 .hero__rating-text{
+    display: flex;
+    align-items: center;
     gap: 18px;
     text-transform: uppercase;
     font-weight: 600;
@@ -334,6 +359,7 @@ body{
 }
 
 .hero__description{
+    display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 20px 32px;
@@ -358,7 +384,9 @@ body{
     width: calc(100% - 30px);
 }
 
-.advantages__main-wrapper{
+.advantages__wrapper{
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -389,6 +417,8 @@ body{
 }
 
 .advantages__item-elements{
+    display: flex;
+    align-items: center;
     padding: 0 20px;
     gap: 20px;
     height: 64px;
@@ -413,6 +443,7 @@ body{
 
 /* BOOKMAKER */
 .bookmaker__text-inner{
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -447,6 +478,8 @@ body{
 }
 
 .bookmaker__rating-item{
+    display: flex;
+    align-items: center;
     padding: 12px 12px;
     width: 240px;
     flex-direction: column;
@@ -480,12 +513,14 @@ body{
 }
 
 .faq__question-title{
+    display: flex;
+    align-items: center;
     padding: 12px;
     font-size: 12px;
     line-height: 22.5px;
 }
 
-.faq__arrow-icon{
+.faq__arrow{
     stroke: var(--accent-color);
     margin-left: auto;
     transform: rotate(180deg);
@@ -494,7 +529,7 @@ body{
     height: 4.5px;
 }
 
-.faq__question-item.active .faq__arrow-icon {
+.faq__question-item.active .faq__arrow {
     transform: rotate(0deg);
 }
 
@@ -523,6 +558,8 @@ body{
 }
 
 .footer__lists-inner{
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 32px;
     margin: 32px 0;
@@ -546,6 +583,8 @@ body{
 }
 
 .footer__partner-item{
+    display: flex;
+    align-items: center;
     padding: 0 16px;
     height: 66px;
     background-color: var(--dominant-color);
@@ -557,6 +596,8 @@ body{
 }
 
 .footer__extra-info{
+    display: flex;
+    align-items: center;
     padding: 34px 10px;
     font-size: 14px;
     line-height: 21px;
@@ -627,7 +668,7 @@ body{
     }
 
     /* SIDEBAR */
-    .main__content-wrapper{
+    .main{
         flex-direction: row;
     }
 
@@ -636,7 +677,7 @@ body{
         margin: 20px 20px 0 0;
     }
 
-    .sidebar-right{
+    .main-content{
         max-width: 1280px;
     }
 
@@ -701,7 +742,7 @@ body{
         margin-right: 20px;
     }
 
-    .advantages__main-wrapper{
+    .advantages__wrapper{
         flex-direction: row;
     }
 
@@ -779,7 +820,7 @@ body{
     }
 
     /* FAQ */
-    .faq__arrow-icon{
+    .faq__arrow{
         width: 16px;
         height: 9px;
     }
